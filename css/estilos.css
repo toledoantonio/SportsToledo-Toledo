@@ -196,6 +196,7 @@ footer a{
     width: 80%;
     padding: 8rem;
     margin: 1.5rem auto;
+    margin-top: 13rem;
 }
 .banner__title{
     color: #FEFFDE;
@@ -233,6 +234,7 @@ main p{
     background: #FEFFDE;
     box-shadow:  1px 10px 15px rgba(0, 0, 0, 0.50);
     transition: all 500ms ease;
+    margin-bottom: 2rem;
 }
 
 .container__img:hover{
@@ -242,10 +244,10 @@ main p{
 /* Torneos */
 .h1__principal{
     font-size: 2rem;
-    padding: 10px;
     text-align: justify;
     margin: 1.5rem auto;
     width: 80%;
+    margin-top: 11rem;
 }
 
 .table__section{
@@ -326,6 +328,7 @@ th {
     background-color: #52734D;
     width: 80%;
     margin: 3rem auto;
+    margin-top: 13rem;
     padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 12px 12px 43px #b5b5b5;
