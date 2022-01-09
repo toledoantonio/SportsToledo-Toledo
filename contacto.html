@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./recursos/favicon.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>SportsToledo | Contacto</title>
+</head>
+
+<body>
+    <!-- Aca empieza el encabezado -->
+    <header class="header">
+        <a href="/index.html">
+            <img src="./recursos/logo.png" alt="Logo de SportsToledo" class="logo">
+        </a>
+        <!-- Lista Desordenada para el Menu -->
+        <nav>
+            <ul>
+                <!-- Enlaces Relativos -->
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="./torneos.html">Torneos</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./escuela.html">Escuela</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Aca termina el encabezado -->
+
+    <!-- Aca comienza el contenido principal -->
+    <main class="formContainer">
+        <h2 class="formContainer__title">Formulario de Contacto</h2>
+        <p class="formContainer__p">¿Querés jugar un Partido con amigos, Participar de un Torneo, Asistir a nuestra Escula o Entrenar a nivel profesional con Nosotros? <br> <span class="nosotros__span"> ¡Comunícate con nosotros y nos pondremos en contacto contigo a la brevedad! </span> Respondemos todas tus consultas.</p>
+        <form action="#" method="GET" class="form">
+            <label for="nombre" class="form__label">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="form__input" required>
+
+            <label for="apellido" class="form__label">Apellido</label>
+            <input type="text" name="apellido" id="apellido" class="form__input" required>
+
+            <label for="tel" class="form__label">Telefono</label>
+            <input type="tel" name="tel" id="tel" class="form__input" required>
+
+            <label for="mail" class="form__label">Mail</label>
+            <input type="email" name="mail" id="mail" class="form__input" required>
+
+            <label for="asunto" class="form__label">Asunto</label>
+            <select name="asunto" id="asunto" class="form__input">
+                <option selected disabled>Seleccionar...</option>
+                <option value="1">Partido</option>
+                <option value="2">Torneo</option>
+                <option value="3">Escuela</option>
+                <option value="3">Entrenamiento</option>
+            </select>
+
+            <label for="mensaje" class="form__label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="form__textarea"></textarea>
+
+            <!-- Checkbox -->
+            <div class="checkbox">
+                <input type="checkbox" class="form__check__input" id="checkbox" name="Acepta" value="SI">
+                <label for="checkbox" class="form__check__label">Deseo recibir promociones por email</label>
+            </div>
+            <div class="formBtn">
+                <button type="submit" class="form__input form__input--submit">Enviar</button>
+                <button type="reset" class="form__input form__input--submit">Cancelar</button>
+            </div>
+        </form>
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.133598713621!2d-64.15611609122223!3d-31.465510888290027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bed81ea3b9b18b6!2zMzHCsDI3JzU4LjMiUyA2NMKwMDknMTUuNiJX!5e0!3m2!1ses-419!2sar!4v1638849111443!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+    </main>
+    <!-- Aca finaliza el contenido principal -->
+    <footer>
+        <!-- Etiqueta en línea -->
+        <div>
+            <a href="/index.html">
+                <img src="./recursos/logo.png" alt="Logo de SportsToledo" class="logo2">
+            </a>
+        </div>
+        <div>
+            <!-- Enlace Absolutos -->
+            <a href="https://www.google.com.ar/maps" target="_blank"><i class="fas fa-map-marker-alt"></i>RN A019,
+                Cordoba, Argentina.</a><br>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <p>© 2021 SportsToledo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
