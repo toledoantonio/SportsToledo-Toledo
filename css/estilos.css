@@ -8,75 +8,128 @@ body{
    background-color: #FEFFDE;
 }
 
-/*HEADER*/
-.logo{
-    height: 130px;
+/*HEADER y NAV*/
+
+.header-color{
+    background-color: #91C788;
 }
-/*Nav*/
-.header{
+
+.navbar{
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
-    background-color: #91C788;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 18px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
-nav ul{
-    display: flex;
-    position: relative;
-}
-
-nav ul li{
-    position: relative;
-    list-style: none;
-    display: inline-block;
-    margin-right: 9rem;
+.nav-item{
     font-size: 1.4rem;
-    font-weight:600;
-}
-
-nav ul li a{
-    list-style: none;
-    text-decoration: none;
-    color: #FEFFDE;
+    font-weight: 600;
+    margin: 3rem;
     position: relative;
 }
-
-nav ul li a::after{
+.nav-link{
+    position: relative;
+}
+.navigation, .header .navbar .logo,
+.header .navbar .navbar-nav .nav-link,
+.header .navbar .navbar-nav .navRedes .nav-link,
+.header .navbar .navbar-toggler, footer .footerTop .info a,
+footer .footerTop .redes a, footer .footerBottom .footerBottom-content a, .sectionVideo .arrowDown {
+  color: #FEFFDE;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav-link:after{
     content: "";
     width: 0;
     height: 4px;
-    background-color: #FEFFDE;
+    background-color: #f9faec;
     position: absolute;
     bottom: -5px;
     right: 50%;
     transition: all .5s;
     will-change: width;
-}
-nav ul li a:hover:after{
+} 
+.nav-link:hover:after{
     width: 100%;
     right: 0;
 }
 
-/* Index */
-.sectionImage{
-    background-image: url('../recursos/imgHome.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: auto;
-    padding: 23rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  .header .navbar .navbar-nav {
+    margin-left: 1rem;
+  }
+
+#separator{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
+
+#separator .content{
+    background-color: #DDFFBC;;
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*MEDIA QUERYS GENERALES*/
+
+  @media only screen and (min-width: 768px) {
+    .header .navbar .logo {
+      padding: 1rem 0;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .header .navbar .navbar-collapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+    }
+    .header .navbar .navbar-nav .nav-link {
+      margin-left: 1rem;
+    }
+    .header .navbar .navbar-nav .navRedes {
+      margin-left: 2rem;
+    }
+    .header .navbar .navbar-nav .navRedes .nav-link {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1350px) and (min-width: 993px) { 
+      .navbar-expand-lg .navbar-nav li.nav-item{
+          margin: 8px;
+  }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .header .navbar .logo {
+      margin-left: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .section h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    .section h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+/* Index */
+
 .principal__title{
     color: #FEFFDE;
     text-align: center;
@@ -98,6 +151,10 @@ nav ul li a:hover:after{
     width: auto;
     padding: 4rem;
     text-align: center;
+    
+}
+.section__sacarTurno h2{
+    font-weight: 600;
 }
 .sacarTurno__title{
     color: #FEFFDE;
@@ -105,7 +162,6 @@ nav ul li a:hover:after{
     font-size: 1.7rem;
     letter-spacing: 0.2rem;
 }
-
 
 /* Buttons */
 
@@ -139,20 +195,17 @@ nav ul li a:hover:after{
    /*FOOTER*/
 footer{
     background-color: #52734D;
-    padding: 1.5rem;
     text-align: center;
 }
 
 footer p {
-    color: #FEFFDE;;
-    margin: 0.8rem;
+    color: #FEFFDE;
     display: flex;
     justify-content: center;
 }
 
 .logo2{
-    width: 11%;
-    height: auto;
+    width: 80%;
 }
 
 footer a{
@@ -160,6 +213,10 @@ footer a{
     color: #FEFFDE;;
     font-size: 1.2rem;
 }
+footer a:hover{
+    color: white;
+}
+
 /*Links de Iconos*/
 .fa-map-marker-alt{
     color: #FEFFDE;
@@ -196,7 +253,7 @@ footer a{
     width: 80%;
     padding: 8rem;
     margin: 1.5rem auto;
-    margin-top: 13rem;
+
 }
 .banner__title{
     color: #FEFFDE;
@@ -217,7 +274,7 @@ main p{
     margin: 1.5rem auto;
     width: 80%;
 }
-.container{
+.container {
     text-align: center;
 }
 .container__title{
@@ -247,15 +304,8 @@ main p{
     text-align: justify;
     margin: 1.5rem auto;
     width: 80%;
-    margin-top: 12rem;
 }
 
-.table__section{
-    text-align: justify;
-    color: #000;
-    margin: 1.5rem auto;
-    width: 80%;
-}
 table {
     border-collapse: collapse;
     box-shadow: 0 5px 10px #b5b5b5;
@@ -265,18 +315,13 @@ table {
 }
 thead {
     box-shadow: 0 5px 10px #b5b5b5;
+    background-color: #52734D;
 }
 th {
     color: #FEFFDE;
-    padding: 2rem 6rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    background-color: #52734D;
-  }
-  td {
-    padding: 2rem 6rem;
-    font-size: 1.1rem;
   }
 
   tr:nth-child(even) {
@@ -287,9 +332,7 @@ th {
 .galeria__section h1{
     font-size: 2rem;
     padding: 18px;
-    padding-top: 6rem;
 }
-
 .galeria__section{
     box-sizing: border-box;
     margin: 0;
@@ -328,7 +371,6 @@ th {
     background-color: #52734D;
     width: 80%;
     margin: 3rem auto;
-    margin-top: 13rem;
     padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 12px 12px 43px #b5b5b5;
@@ -395,7 +437,6 @@ th {
     color: #FEFFDE;
     font-weight: 300;
     font-size: 1.1rem;
-    width: 60%;
 }
 
 .form__input--submit{
