@@ -74,6 +74,11 @@ footer .footerTop .redes a, footer .footerBottom .footerBottom-content a, .secti
     border-bottom-right-radius: 50%;
 }
 
+.bn{
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #52734D;
+}
 /*MEDIA QUERYS GENERALES*/
 
   @media only screen and (min-width: 768px) {
@@ -119,6 +124,9 @@ footer .footerTop .redes a, footer .footerBottom .footerBottom-content a, .secti
       font-size: 4rem;
       line-height: 4rem;
     }
+    .nav-item{
+        margin: 1.6rem;
+    }
   }
   
   @media only screen and (min-width: 1400px) {
@@ -127,6 +135,16 @@ footer .footerTop .redes a, footer .footerBottom .footerBottom-content a, .secti
       line-height: 5rem;
     }
   }
+
+  @media only screen and (max-width: 767px) {
+      .nav-item{
+          margin: 1.2rem;
+      }
+      .section__sacarTurno{
+          margin: 0;
+          background-color: #52734D;
+      }
+    }
 
 /* Index */
 
@@ -208,12 +226,12 @@ footer p {
     width: 80%;
 }
 
-footer a{
+.calle{
     text-decoration: none;
     color: #FEFFDE;;
     font-size: 1.2rem;
 }
-footer a:hover{
+.calle:hover{
     color: white;
 }
 
@@ -261,6 +279,16 @@ footer a:hover{
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
+
+@media only screen and (max-width: 767px) {
+    .banner{
+        padding-bottom: 0;
+    }
+    .banner__title{
+        font-size: 1.7rem;
+    }
+}
+
 h2{
     text-align: justify;
     color: #000;
@@ -306,6 +334,7 @@ main p{
     width: 80%;
 }
 
+
 table {
     border-collapse: collapse;
     box-shadow: 0 5px 10px #b5b5b5;
@@ -326,6 +355,26 @@ th {
 
   tr:nth-child(even) {
     background-color: #f5f4f4;
+  }
+
+  .sectionCards{
+      margin-bottom: 1.7rem;
+  }
+  .sectionCards h3{
+      margin: 2rem;
+  }
+  .card{
+      align-items: center;
+      background-color: #DDFFBC;
+      margin: auto;
+  }
+  .card-title{
+      font-weight: 600;
+      margin-bottom: 0;
+  }
+  .card-text{
+      font-size: 1rem;
+      text-align: center;
   }
 
 /* Galeria */
@@ -354,7 +403,7 @@ th {
     margin-top: 5px;
 }
 
-/*MEDIA QUERYS*/
+/*MEDIA QUERYS de GALERIA*/
 @media (max-width: 800px){
     .column{
         flex: 50%;
