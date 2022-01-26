@@ -1,0 +1,47 @@
+footer {
+    background-color: $color__oscuro--primario;
+    text-align: center;
+
+    p {
+        color: $color__fondo--principal;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo2 {
+        width: 80%;
+    }
+
+    .calle {
+        text-decoration: none;
+        color: #FEFFDE;
+        ;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+/*Links de Iconos*/
+.fa-map-marker-alt{
+    color: #FEFFDE;
+    font-size: 2.1rem;
+    padding: 1.2rem;
+}
+.fa-facebook-square{
+    color: #FEFFDE;
+    font-size: 2.4rem;
+    padding: 0.6rem;
+}
+.fa-instagram{
+    color: #FEFFDE;
+    font-size: 2.4rem;
+    padding: 0.6rem;
+}
+.fa-youtube{
+    color: #FEFFDE;
+    font-size: 2.4rem;
+    padding: 0.6rem;
+}

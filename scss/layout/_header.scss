@@ -1,0 +1,46 @@
+.header {
+    background-color: $color__claro--secundario;
+ 
+    .navbar {
+        font-family: $font-header;
+        text-transform: uppercase;
+        transition: 0.9s;
+
+        .navbar-nav {
+            margin-left: 1rem;
+
+            .nav-link{
+                color: #FEFFDE;
+                transition: all 0.3s ease;
+            }
+
+            .nav-item {
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 2rem;
+                position: relative;
+
+                .nav-link {
+                    position: relative;
+                    
+                    &::after{
+                        content: "";
+                        width: 0;
+                        height: 4px;
+                        background-color: #f9faec;
+                        position: absolute;
+                        bottom: -5px;
+                        right: 50%;
+                        transition: all .5s;
+                        will-change: width;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

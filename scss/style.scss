@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./layout/nosotros";
+@import "./layout/torneos";
+@import "./layout/galeria";
+@import "./layout/escuela";
+@import "./layout/contacto";
+
+@import "./components/buttons";
+
+body{
+    font-family: $sans-serif;
+    background-color: $color__fondo--principal;
+ }

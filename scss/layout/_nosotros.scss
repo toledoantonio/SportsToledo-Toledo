@@ -1,0 +1,65 @@
+main {
+
+    p {
+        text-align: justify;
+        font-size: 1.2rem;
+        color: $color__texto;
+        margin: 1.5rem auto;
+        width: 80%;
+
+        .nombre__span {
+            color: $color__oscuro--primario;
+            font-weight: 600;
+        }
+    }
+
+    .banner {
+        background-image: url('../recursos/predio01.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 0.5rem;
+        width: 80%;
+        padding: 8rem;
+        margin: 1.5rem auto;
+
+        .banner__title {
+            color: $color__fondo--principal;
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    h2 {
+        text-align: justify;
+        color: $color__texto;
+        margin: 1.5rem auto;
+        width: 80%;
+    }
+
+    .container {
+        text-align: center;
+
+        .container__title {
+            color: $color__texto;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem;
+            text-align: center;
+        }
+
+        .container__img {
+            width: 25%;
+            margin: 0.5rem;
+            border-radius: 15px;
+            background: $color__fondo--principal;
+            box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+            transition: all 500ms ease;
+            margin-bottom: 2rem;
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+    }
+}

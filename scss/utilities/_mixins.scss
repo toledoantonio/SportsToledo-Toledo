@@ -1,0 +1,100 @@
+// ME FALTA ACOMODARLO CON MIXINS, NO ESTA TERMINADO ESTA PARTE
+
+//MEDIA QUERYS GENERALES
+
+@media only screen and (min-width: 768px) {
+    .header .navbar .logo {
+        padding: 1rem 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header .navbar .navbar-collapse {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .header .navbar .navbar-nav .nav-link {
+        margin-left: 1rem;
+    }
+
+    .header .navbar .navbar-nav .navRedes {
+        margin-left: 2rem;
+    }
+
+    .header .navbar .navbar-nav .navRedes .nav-link {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1230px) and (min-width: 993px) {
+    .navbar .nav-item .nav-link {
+        margin-right: -2.4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header .navbar .logo {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .nav-item {
+        margin: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .section h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-item {
+        margin: 1.2rem;
+    }
+
+    .section__sacarTurno {
+        margin: 0;
+        background-color: #52734D;
+    }
+}
+
+//NOSOTROS
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        padding-bottom: 0;
+    }
+
+    .banner__title {
+        font-size: 1.7rem;
+    }
+}
+
+//GALERIA
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}

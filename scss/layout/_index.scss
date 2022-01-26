@@ -1,0 +1,48 @@
+#separator {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    .content {
+        background-color: $color__claro--principal;
+        width: 150%;
+        height: 150px;
+        margin-left: -25%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .bn {
+        margin-top: 1rem;
+        font-weight: 600;
+        color: $color__oscuro--primario;
+    }
+}
+
+.section__Escuela,
+.section__Galeria {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.section__sacarTurno {
+    background-image: url('../recursos/preFooter.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: auto;
+    padding: 4rem;
+    text-align: center;
+
+    h2 {
+        font-weight: 600;
+    }
+}
+
+.sacarTurno__title {
+    color: $color__fondo--principal;
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+}

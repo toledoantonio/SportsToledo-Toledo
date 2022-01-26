@@ -1,0 +1,62 @@
+main {
+    .h1__principal {
+        font-size: 2rem;
+        text-align: justify;
+        margin: 1.5rem auto;
+        width: 80%;
+    }
+
+    .h2__torneos {
+        font-size: 1.6rem;
+    }
+
+    table {
+        border-collapse: collapse;
+        box-shadow: 0 5px 10px #b5b5b5;
+        background-color: white;
+        text-align: left;
+        overflow: hidden;
+
+        thead {
+            box-shadow: 0 5px 10px #b5b5b5;
+            background-color: $color__oscuro--primario;
+
+            tr {
+                th {
+                    color: $color__fondo--principal;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1rem;
+                    font-weight: 600;
+                }
+
+                &:nth-child(even) {
+                    background-color: #f5f4f4;
+                }
+            }
+        }
+    }
+
+    .sectionCards {
+        margin-bottom: 1.7rem;
+
+        h3 {
+            margin: 2rem;
+        }
+
+        .card {
+            align-items: center;
+            background-color: $color__claro--principal;
+            margin: auto;
+
+            .card-title {
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            .card-text {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.galeria__section {
+    h1 {
+        font-size: 2rem;
+        padding: 18px;
+    }
+
+    .row {
+        display: flex;
+        padding: 5px;
+        flex-wrap: wrap;
+
+        .column {
+            flex: 25%;
+            padding: 5px;
+
+            img {
+                margin-top: 5px;
+            }
+
+            .imgGaleria {
+                width: 100%;
+            }
+        }
+    }
+}
