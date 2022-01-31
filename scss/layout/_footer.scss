@@ -14,8 +14,7 @@ footer {
 
     .calle {
         text-decoration: none;
-        color: #FEFFDE;
-        ;
+        color: $color__fondo--principal;
         font-size: 1.2rem;
 
         &:hover {
@@ -25,23 +24,15 @@ footer {
 }
 
 /*Links de Iconos*/
-.fa-map-marker-alt{
-    color: #FEFFDE;
-    font-size: 2.1rem;
-    padding: 1.2rem;
+.fa-map-marker-alt{ 
+    @include iconos (2.1rem, 1.2rem)
 }
 .fa-facebook-square{
-    color: #FEFFDE;
-    font-size: 2.4rem;
-    padding: 0.6rem;
+    @include iconos (2.4rem, 0.6rem)
 }
 .fa-instagram{
-    color: #FEFFDE;
-    font-size: 2.4rem;
-    padding: 0.6rem;
+    @include iconos (2.4rem, 0.6rem)
 }
 .fa-youtube{
-    color: #FEFFDE;
-    font-size: 2.4rem;
-    padding: 0.6rem;
+    @include iconos (2.4rem, 0.6rem)
 }

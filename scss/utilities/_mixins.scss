@@ -73,6 +73,14 @@
     }
 }
 
+//MIXIN PARA ICONOS
+
+@mixin iconos ($tamanio, $padding){
+    color: $color__fondo--principal;
+    font-size: $tamanio;
+    padding: $padding;
+}
+
 //NOSOTROS
 
 @media only screen and (max-width: 767px) {

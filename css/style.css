@@ -66,6 +66,22 @@
   .column {
     flex: 100%; } }
 
+.SportsToledo__span {
+  color: #52734D;
+  font-weight: 600; }
+
+.Futbol11__span {
+  color: #52734D;
+  font-weight: 600; }
+
+.Futbol7__span {
+  color: #52734D;
+  font-weight: 600; }
+
+.Futbol5__span {
+  color: #52734D;
+  font-weight: 600; }
+
 .header {
   background-color: #91C788; }
   .header .navbar {
@@ -180,9 +196,6 @@ main p {
   color: #000;
   margin: 1.5rem auto;
   width: 80%; }
-  main p .nombre__span {
-    color: #52734D;
-    font-weight: 600; }
 
 main .banner {
   background-image: url("../recursos/predio01.jpg");
@@ -266,7 +279,7 @@ main .sectionCards {
 
 .galeria__section h1 {
   font-size: 2rem;
-  padding: 18px; }
+  padding: 10px; }
 
 .galeria__section .row {
   display: flex;
@@ -276,7 +289,7 @@ main .sectionCards {
     flex: 25%;
     padding: 5px; }
     .galeria__section .row .column img {
-      margin-top: 5px; }
+      margin-top: 8px; }
     .galeria__section .row .column .imgGaleria {
       width: 100%; }
 
