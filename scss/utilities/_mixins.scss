@@ -1,12 +1,4 @@
-// ME FALTA ACOMODARLO CON MIXINS, NO ESTA TERMINADO ESTA PARTE
-
 //MEDIA QUERYS GENERALES
-
-@media only screen and (min-width: 768px) {
-    .header .navbar .logo {
-        padding: 1rem 0;
-    }
-}
 
 @media only screen and (min-width: 992px) {
     .header .navbar .navbar-collapse {
@@ -22,11 +14,11 @@
         margin-left: 1rem;
     }
 
-    .header .navbar .navbar-nav .navRedes {
+    .header .navbar .navbar-nav {
         margin-left: 2rem;
     }
 
-    .header .navbar .navbar-nav .navRedes .nav-link {
+    .header .navbar .navbar-nav .nav-link {
         margin: 0;
     }
 }
@@ -53,6 +45,10 @@
     .nav-item {
         margin: 1.6rem;
     }
+
+    .header .navbar .logo {
+        padding: 1rem 0;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -69,7 +65,15 @@
 
     .section__sacarTurno {
         margin: 0;
-        background-color: #52734D;
+        background-color: $color__oscuro--primario;
+    }
+
+    .banner.container {
+        padding-bottom: 0;
+    }
+
+    .banner__title.row {
+        font-size: 1.7rem;
     }
 }
 
@@ -79,18 +83,6 @@
     color: $color__fondo--principal;
     font-size: $tamanio;
     padding: $padding;
-}
-
-//NOSOTROS
-
-@media only screen and (max-width: 767px) {
-    .banner {
-        padding-bottom: 0;
-    }
-
-    .banner__title {
-        font-size: 1.7rem;
-    }
 }
 
 //GALERIA
