@@ -28,12 +28,9 @@
 
 .section__sacarTurno {
     background-image: url('../recursos/preFooter.jpg');
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    width: auto;
     padding: 4rem;
-    text-align: center;
+    @extend %estiloFondoImagen;
 
     h2 {
         font-weight: 600;

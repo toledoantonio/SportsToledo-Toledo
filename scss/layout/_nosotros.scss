@@ -10,16 +10,13 @@ main {
 
     .banner {
         background-image: url('../recursos/predio01.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
         border-radius: 0.5rem;
-        width: 80%;
         padding: 8rem;
         margin: 1.5rem auto;
+        @extend %estiloFondoImagen;
 
         .banner__title {
             color: $color__fondo--principal;
-            text-align: center;
             font-size: 2rem;
             letter-spacing: 0.2rem;
         }

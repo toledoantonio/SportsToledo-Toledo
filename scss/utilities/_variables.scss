@@ -13,3 +13,12 @@ $sans-serif: 'Poppins', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
 $font-header: 'Exo 2', sans-serif;
+
+//EXTEND
+
+%estiloFondoImagen {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    text-align: center;
+}

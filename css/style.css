@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+.section__sacarTurno, main .banner {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: auto;
+  text-align: center; }
+
 @media only screen and (min-width: 992px) {
   .header .navbar .navbar-collapse {
     display: -webkit-box;
@@ -171,12 +177,8 @@ footer {
 
 .section__sacarTurno {
   background-image: url("../recursos/preFooter.jpg");
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  width: auto;
-  padding: 4rem;
-  text-align: center; }
+  padding: 4rem; }
   .section__sacarTurno h2 {
     font-weight: 600; }
 
@@ -195,15 +197,11 @@ main p {
 
 main .banner {
   background-image: url("../recursos/predio01.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 0.5rem;
-  width: 80%;
   padding: 8rem;
   margin: 1.5rem auto; }
   main .banner .banner__title {
     color: #FEFFDE;
-    text-align: center;
     font-size: 2rem;
     letter-spacing: 0.2rem; }
 
@@ -265,7 +263,10 @@ main .sectionCards {
   main .sectionCards .card {
     align-items: center;
     background-color: #DDFFBC;
-    margin: auto; }
+    margin: auto;
+    transition: transform 0.5s; }
+    main .sectionCards .card:hover {
+      transform: translateY(-10px); }
     main .sectionCards .card .card-title {
       font-weight: 600;
       margin-bottom: 0; }
