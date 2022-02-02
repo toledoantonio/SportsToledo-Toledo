@@ -240,8 +240,9 @@ footer {
         line-height: 4rem; } }
     @media only screen and (min-width: 1400px) {
       .section h2 {
-        font-size: 5rem;
-        line-height: 5rem; } }
+        font-size: 3.7rem;
+        line-height: 4rem;
+        text-align: center; } }
   .section p:not(:last-child) {
     margin-bottom: 1rem; }
   .section .sectionHead {

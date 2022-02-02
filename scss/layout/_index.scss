@@ -21,8 +21,6 @@
     }
 }
 
-
-
 .section__sacarTurno {
     background-image: url('../recursos/preFooter.jpg');
     background-position: center;
@@ -127,8 +125,9 @@
         }
 
         @include respond(xxl) {
-            font-size: 5rem;
-            line-height: 5rem;
+            font-size: 3.7rem;
+            line-height: 4rem;
+            text-align: center;
         }
     }
 
