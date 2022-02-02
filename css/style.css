@@ -157,7 +157,8 @@ footer {
   width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  margin-bottom: 3.5rem; }
   #separator .content {
     background-color: #DDFFBC;
     width: 150%;
@@ -169,11 +170,6 @@ footer {
     margin-top: 1rem;
     font-weight: 600;
     color: #52734D; }
-
-.section__Escuela,
-.section__Galeria {
-  text-align: center;
-  padding-bottom: 3rem; }
 
 .section__sacarTurno {
   background-image: url("../recursos/preFooter.jpg");
@@ -187,6 +183,154 @@ footer {
   text-align: center;
   font-size: 1.7rem;
   letter-spacing: 0.2rem; }
+
+.galeriaHome {
+  text-align: center; }
+  .galeriaHome .sectionBody {
+    display: grid;
+    grid-template-rows: repeat(10, 0.5fr);
+    gap: 0.6rem; }
+    @media only screen and (min-width: 576px) {
+      .galeriaHome .sectionBody {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr; } }
+    @media only screen and (min-width: 768px) {
+      .galeriaHome .sectionBody {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 0.5fr); }
+        .galeriaHome .sectionBody div:nth-child(1) {
+          grid-column-end: span 2; }
+        .galeriaHome .sectionBody div:nth-child(7) {
+          grid-column-end: span 2; } }
+    @media only screen and (min-width: 992px) {
+      .galeriaHome .sectionBody {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 0.5fr); }
+        .galeriaHome .sectionBody div:nth-child(1) {
+          grid-column-end: span 2; }
+        .galeriaHome .sectionBody div:nth-child(7) {
+          grid-column-end: unset; }
+        .galeriaHome .sectionBody div:nth-child(10) {
+          grid-column-end: span 2; } }
+    @media only screen and (min-width: 1400px) {
+      .galeriaHome .sectionBody {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: unset; }
+        .galeriaHome .sectionBody div:nth-child(1) {
+          grid-column-end: span 2;
+          grid-row-end: span 2; }
+        .galeriaHome .sectionBody div:nth-child(4) {
+          grid-row-end: span 2; }
+        .galeriaHome .sectionBody div:nth-child(5) {
+          grid-row-end: span 2; }
+        .galeriaHome .sectionBody div:nth-child(7) {
+          grid-column-end: unset; }
+        .galeriaHome .sectionBody div:nth-child(10) {
+          grid-column-end: unset; } }
+
+.section {
+  padding: 5rem 0; }
+  .section h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 768px) {
+      .section h2 {
+        font-size: 4rem;
+        line-height: 4rem; } }
+    @media only screen and (min-width: 1400px) {
+      .section h2 {
+        font-size: 5rem;
+        line-height: 5rem; } }
+  .section p:not(:last-child) {
+    margin-bottom: 1rem; }
+  .section .sectionHead {
+    margin: 0 2rem 5rem 2rem; }
+
+.section-hero {
+  min-height: calc(100vh - 125px);
+  display: grid; }
+  @media only screen and (min-width: 1200px) {
+    .section-hero .sectionHead {
+      margin: 0 2rem 0 2rem; } }
+  @media only screen and (min-width: 1400px) {
+    .section-hero {
+      align-items: center; } }
+
+@media only screen and (min-width: 1200px) {
+  .section-hero-right {
+    grid-template-columns: 4fr 2fr; }
+    .section-hero-right .sectionHead {
+      grid-column: 2;
+      grid-row: 1; }
+    .section-hero-right .sectionBody {
+      grid-column: 1;
+      grid-row: 1; } }
+
+@media only screen and (min-width: 1400px) {
+  .section-hero-right {
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0%; } }
+
+.imgGaleria {
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(197, 200, 198, 0.5), 0 6px 20px 0 rgba(209, 221, 212, 0.5);
+  position: relative;
+  background-color: #000000; }
+  .imgGaleria span,
+  .imgGaleria img {
+    transition: all 0.3s ease; }
+  .imgGaleria span {
+    position: absolute;
+    z-index: 1;
+    bottom: -2rem;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #252525;
+    color: #FDF6E3;
+    padding: 0 0.8rem;
+    border-radius: 1rem;
+    white-space: nowrap; }
+  .imgGaleria img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(-25%) scale(1.5); }
+    @media only screen and (min-width: 576px) {
+      .imgGaleria img {
+        height: 100%;
+        object-fit: cover;
+        transform: translateY(0) scale(1.5); } }
+  .imgGaleria:hover span {
+    bottom: 1rem; }
+  .imgGaleria:hover img {
+    opacity: 1;
+    transform: translateY(-25%) scale(1); }
+    @media only screen and (min-width: 576px) {
+      .imgGaleria:hover img {
+        transform: translateY(0) scale(1); } }
+
+.section-hero-left {
+  padding: 5rem 0 0 0; }
+  @media only screen and (min-width: 1200px) {
+    .section-hero-left {
+      padding: 3.5rem 0;
+      padding-bottom: 0%;
+      grid-template-columns: 2fr 4fr; }
+      .section-hero-left .sectionHead {
+        text-align: center; } }
+  @media only screen and (min-width: 1400px) {
+    .section-hero-left {
+      grid-template-columns: 1fr 2fr;
+      padding-bottom: 0%; } }
+  @media only screen and (min-width: 1401px) {
+    .section-hero-left {
+      padding: 0rem 0;
+      padding-bottom: 0%; } }
+
+.section__Escuela {
+  text-align: center; }
 
 main p {
   text-align: justify;

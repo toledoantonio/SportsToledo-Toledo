@@ -5,6 +5,17 @@ $color__claro--secundario: #91C788;
 $color__oscuro--primario: #52734D;
 $color__texto: #000;
 
+$negro: #000000;
+$blanco: #ffffff;
+$gris: #98adaf;
+$grisclaro: #d3d3d3;
+$rojo: #DB1A4B;
+$naranja: #FFAC41;
+$cyan: #82ABC9;
+$dark: #252525;
+$light: #FDF6E3;
+$bone: #c9b797;
+
 //FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
@@ -22,3 +33,14 @@ $font-header: 'Exo 2', sans-serif;
     width: auto;
     text-align: center;
 }
+
+// Transition
+
+$transition: all 0.3s ease;
+$transition-slow: all 0.8s ease;
+
+// Sombras
+
+$shadow: 0 4px 8px 0 rgba(197, 200, 198, 0.5), 0 6px 20px 0 rgba(209, 221, 212, 0.5);
+
+
