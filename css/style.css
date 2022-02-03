@@ -297,18 +297,16 @@ footer {
     display: block;
     width: 100%;
     object-fit: cover;
-    transform: translateY(-25%) scale(1.5);
+    transform: translateY(0) scale(1.5);
     cursor: pointer; }
     @media only screen and (min-width: 576px) {
       .imgGaleria img {
         height: 100%;
         object-fit: cover;
         transform: translateY(0) scale(1.5); } }
-  .imgGaleria:hover span {
-    bottom: 1rem; }
   .imgGaleria:hover img {
     opacity: 1;
-    transform: translateY(-25%) scale(1); }
+    transform: translateY(0) scale(1); }
     @media only screen and (min-width: 576px) {
       .imgGaleria:hover img {
         transform: translateY(0) scale(1); } }
