@@ -297,7 +297,8 @@ footer {
     display: block;
     width: 100%;
     object-fit: cover;
-    transform: translateY(-25%) scale(1.5); }
+    transform: translateY(-25%) scale(1.5);
+    cursor: pointer; }
     @media only screen and (min-width: 576px) {
       .imgGaleria img {
         height: 100%;
@@ -341,7 +342,7 @@ main p {
   width: 80%; }
 
 main .banner {
-  background-image: url("../recursos/predio01.jpg");
+  background-image: url("../recursos/nosotros/predio01.jpg");
   border-radius: 0.5rem;
   padding: 8rem;
   margin: 1.5rem auto; }
@@ -419,21 +420,57 @@ main .sectionCards {
       font-size: 1rem;
       text-align: center; }
 
-.galeria__section h1 {
-  font-size: 2rem;
-  margin: 1rem; }
+.galeria__section {
+  background-image: url(/recursos/fondoGaleria.jpg);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: -250px top; }
+  .galeria__section h1 {
+    font-size: 2rem;
+    margin: 0; }
+  @media only screen and (min-width: 576px) {
+    .galeria__section {
+      background-position: center top; } }
+  @media only screen and (min-width: 992px) {
+    .galeria__section {
+      background-position: right top; } }
+  @media only screen and (min-width: 1200px) {
+    .galeria__section {
+      background-position: 95% 2rem; } }
+  .galeria__section .sectionHead-galeria {
+    margin: 0 2rem 5rem 2rem; }
+    @media only screen and (min-width: 1200px) {
+      .galeria__section .sectionHead-galeria {
+        margin: 0;
+        width: 100%;
+        position: fixed; }
+        .galeria__section .sectionHead-galeria h1,
+        .galeria__section .sectionHead-galeria p {
+          width: 75%; } }
 
-.galeria__section .row {
-  display: flex;
-  padding: 5px;
-  flex-wrap: wrap; }
-  .galeria__section .row .column {
-    flex: 25%;
-    padding: 5px; }
-    .galeria__section .row .column img {
-      margin-top: 8px; }
-    .galeria__section .row .column .imgGaleria {
-      width: 100%; }
+.imgGaleria-masonry {
+  height: 200px; }
+  @media only screen and (min-width: 576px) {
+    .imgGaleria-masonry {
+      height: unset; } }
+
+.modalGaleria .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(197, 200, 198, 0.5), 0 6px 20px 0 rgba(209, 221, 212, 0.5);
+  height: 100%; }
+
+.modalGaleria .modal-dialog .btn-close {
+  padding: 0.5rem 0.5rem;
+  color: none; }
+  .modalGaleria .modal-dialog .btn-close:focus, .modalGaleria .modal-dialog .btn-close:active {
+    outline: none;
+    box-shadow: none; }
+
+p.enfasis {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin: 0; }
 
 .formContainer {
   background-color: #52734D;

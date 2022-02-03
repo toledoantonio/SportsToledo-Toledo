@@ -1,25 +1,74 @@
 .galeria__section {
     h1 {
         font-size: 2rem;
-        margin: 1rem;
+        margin: 0;
     }
 
-    .row {
-        display: flex;
-        padding: 5px;
-        flex-wrap: wrap;
+    background-image: url(/recursos/fondoGaleria.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: -250px top;
 
-        .column {
-            flex: 25%;
-            padding: 5px;
+    @include respond(sm) {
+        background-position: center top;
+    }
 
-            img {
-                margin-top: 8px;
-            }
+    @include respond(lg) {
+        background-position: right top;
+    }
 
-            .imgGaleria {
-                width: 100%;
+    @include respond(xl) {
+        background-position: 95% 2rem;
+    }
+
+    .sectionHead-galeria {
+        margin: 0 2rem 5rem 2rem;
+
+        @include respond(xl) {
+            margin: 0;
+            width: 100%;
+            position: fixed;
+
+            h1,
+            p {
+                width: 75%;
             }
         }
     }
+}
+
+.imgGaleria-masonry {
+    height: 200px;
+
+    @include respond(sm) {
+        height: unset;
+    }
+}
+
+.modalGaleria {
+    .modal-dialog {
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            box-shadow: $shadow;
+            height: 100%;
+        }
+
+        .btn-close {
+            padding: 0.5rem 0.5rem;
+            color: none;
+
+            &:focus,
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+p.enfasis {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin: 0;
 }

@@ -39,7 +39,7 @@
     letter-spacing: 0.2rem;
 }
 
-.galeriaHome{
+.galeriaHome {
     text-align: center;
 
     .sectionBody {
@@ -47,36 +47,36 @@
         grid-template-rows: repeat(10, 0.5fr);
         gap: 0.6rem;
 
-        @include respond(sm){
+        @include respond(sm) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
         }
-    
+
         @include respond(md) {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, 0.5fr);
-    
+
             div:nth-child(1) {
                 grid-column-end: span 2;
             }
-    
+
             div:nth-child(7) {
                 grid-column-end: span 2;
             }
         }
-    
+
         @include respond(lg) {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 0.5fr);
-    
+
             div:nth-child(1) {
                 grid-column-end: span 2;
             }
-    
+
             div:nth-child(7) {
                 grid-column-end: unset;
             }
-    
+
             div:nth-child(10) {
                 grid-column-end: span 2;
             }
@@ -85,24 +85,24 @@
         @include respond(xxl) {
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: unset;
-    
+
             div:nth-child(1) {
                 grid-column-end: span 2;
                 grid-row-end: span 2;
             }
-    
+
             div:nth-child(4) {
                 grid-row-end: span 2;
             }
-    
+
             div:nth-child(5) {
                 grid-row-end: span 2;
             }
-    
+
             div:nth-child(7) {
                 grid-column-end: unset;
             }
-    
+
             div:nth-child(10) {
                 grid-column-end: unset;
             }
@@ -131,12 +131,12 @@
         }
     }
 
-    p:not(:last-child){
+    p:not(:last-child) {
         margin-bottom: 1rem;
     }
 
     .sectionHead {
-        margin:0 2rem 5rem 2rem;
+        margin: 0 2rem 5rem 2rem;
     }
 }
 
@@ -145,29 +145,33 @@
     display: grid;
 
     @include respond(xl) {
-        
+
         .sectionHead {
-            margin:0 2rem 0 2rem;
+            margin: 0 2rem 0 2rem;
         }
     }
-    @include respond(xxl){
+
+    @include respond(xxl) {
         align-items: center;
     }
 }
 
-.section-hero-right{
-    @include respond(xl){
+.section-hero-right {
+    @include respond(xl) {
         grid-template-columns: 4fr 2fr;
-        .sectionHead{
+
+        .sectionHead {
             grid-column: 2;
             grid-row: 1;
         }
-        .sectionBody{
+
+        .sectionBody {
             grid-column: 1;
             grid-row: 1;
         }
     }
-    @include respond(xxl){
+
+    @include respond(xxl) {
         grid-template-columns: 2fr 1fr;
         padding-top: 0%;
     }
@@ -203,6 +207,8 @@
         width: 100%;
         object-fit: cover;
         transform: translateY(-25%) scale(1.5);
+        cursor: pointer;
+
         @include respond(sm) {
             height: 100%;
             object-fit: cover;
@@ -224,26 +230,30 @@
     }
 }
 
-.section-hero-left{
+.section-hero-left {
     padding: 5rem 0 0 0;
-    @include respond(xl){
+
+    @include respond(xl) {
         padding: 3.5rem 0;
         padding-bottom: 0%;
         grid-template-columns: 2fr 4fr;
-        .sectionHead{
+
+        .sectionHead {
             text-align: center;
         }
     }
-    @include respond(xxl){
+
+    @include respond(xxl) {
         grid-template-columns: 1fr 2fr;
         padding-bottom: 0%;
     }
-    @include respond(full){
+
+    @include respond(full) {
         padding: 0rem 0;
         padding-bottom: 0%;
     }
 }
 
-.section__Escuela{
+.section__Escuela {
     text-align: center;
 }
