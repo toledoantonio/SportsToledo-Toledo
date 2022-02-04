@@ -40,17 +40,23 @@ main {
             text-align: center;
         }
 
-        .container__img {
-            width: 25%;
-            margin: 0.5rem;
-            border-radius: 15px;
-            background: $color__fondo--principal;
-            box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
-            transition: all 500ms ease;
-            margin-bottom: 2rem;
+        .carousel {
+            width: 80%;
+            padding: 1rem 0 1rem 0;
 
-            &:hover {
-                transform: scale(0.95);
+            button {
+                box-shadow: none;
+
+                &:hover {
+                    background-color: transparent;
+                    box-shadow: none;
+                    color: transparent;
+                    transform: none;
+                }
+            }
+
+            .d-block {
+                border-radius: 0.5rem;
             }
         }
     }
