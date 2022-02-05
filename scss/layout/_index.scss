@@ -1,3 +1,17 @@
+.carousel {
+
+    button {
+        box-shadow: none;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            color: transparent;
+            transform: none;
+        }
+    }
+}
+
 #separator {
     width: 100%;
     overflow: hidden;

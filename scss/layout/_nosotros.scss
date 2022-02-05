@@ -44,17 +44,6 @@ main {
             width: 80%;
             padding: 1rem 0 1rem 0;
 
-            button {
-                box-shadow: none;
-
-                &:hover {
-                    background-color: transparent;
-                    box-shadow: none;
-                    color: transparent;
-                    transform: none;
-                }
-            }
-
             .d-block {
                 border-radius: 0.5rem;
             }

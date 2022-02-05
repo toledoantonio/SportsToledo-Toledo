@@ -162,6 +162,14 @@ footer {
   font-size: 2.4rem;
   padding: 0.6rem; }
 
+.carousel button {
+  box-shadow: none; }
+  .carousel button:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: transparent;
+    transform: none; }
+
 #separator {
   width: 100%;
   overflow: hidden;
@@ -375,13 +383,6 @@ main .container {
   main .container .carousel {
     width: 80%;
     padding: 1rem 0 1rem 0; }
-    main .container .carousel button {
-      box-shadow: none; }
-      main .container .carousel button:hover {
-        background-color: transparent;
-        box-shadow: none;
-        color: transparent;
-        transform: none; }
     main .container .carousel .d-block {
       border-radius: 0.5rem; }
 

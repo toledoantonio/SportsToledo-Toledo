@@ -17,6 +17,8 @@
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Link para Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="./recursos/favicon.png">
     <!-- Link CSS Bootstrap -->
@@ -63,26 +65,36 @@
     <main>
 
         <!-- CAROUSEL-->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./recursos/imgHome01.jpg" class="d-block w-100" alt="Imagen de Carousel 1">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./recursos/imgHome04.jpg" class="d-block w-100 imgSlider" alt="Imagen de Carousel 1">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="./recursos/imgHome02.jpg" class="d-block w-100" alt="Imagen de Carousel 2">
                 </div>
                 <div class="carousel-item">
                     <img src="./recursos/imgHome03.jpg" class="d-block w-100" alt="Imagen de Carousel 3">
                 </div>
                 <div class="carousel-item">
-                    <img src="./recursos/imgHome04.jpg" class="d-block w-100" alt="Imagen de Carousel 4">
+                    <img src="./recursos/imgHome01.jpg" class="d-block w-100" alt="Imagen de Carousel 4">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <!-- SEPARATOR -->
 
-        <div id="separator">
+        <div id="separator" data-aos="zoom-in">
             <div class="content">
                 <div class="col-sm p-3 text-light text-center">
                     <h4 class="bn h3">SportsToledo</h4>
@@ -113,7 +125,7 @@
         </section>
 
         <section class="section__Escuela section section-hero section-hero-left">
-            <div class="sectionHead">
+            <div class="sectionHead" data-aos="fade-up" data-aos-duration="2000">
                 <h2>Escuela</h2>
                 <p>En el horario de la tarde desarrollamos nuestra Escuela de Fútbol, destinada a niños,
                     niñas y adolescentes, a través de una propuesta formativa y recreativa que procura brindar
@@ -162,7 +174,7 @@
         </section>
 
         <section class="section__Galeria section section-hero section-hero-right galeriaHome">
-            <div class="sectionHead">
+            <div class="sectionHead" data-aos="fade-up" data-aos-duration="2000">
                 <h2>Galeria de Fotos</h2>
                 <p>Nos tomamos en serio nuestro trabajo y por eso podes encontrar todas las fotos de nuestros partidos,
                     eventos y entrenamientos en la mejor calidad.</p>
@@ -208,7 +220,7 @@
         </section>
 
         <section class="section__sacarTurno">
-            <h2 class="sacarTurno__title">¿Que estas esperando para rodar el balon?</h2>
+            <h2 class="sacarTurno__title" data-aos="flip-up">¿Que estas esperando para rodar el balon?</h2>
             <form action="./sections/contacto.html">
                 <button> ¡Quiero un Turno!
                 </button>
@@ -247,6 +259,12 @@
     <!--Link JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!--Link para el funcionamiento de Animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
