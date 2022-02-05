@@ -63,22 +63,51 @@
             <h1 class="h1__principal row">Nuestra Escuela</h1>
             <p class="col-md">Contamos con Profesores especializados y capacitados permanentemente,
                 con experiencia en fútbol infantil y juvenil. <br>
-                Somos formadores antes que entrenadores. Nuestra misión es acompañar al niño en su crecimiento 
-                y a través del juego reforzar los valores que vienen de casa y son imprescindibles para la práctica deportiva. 
+                Somos formadores antes que entrenadores. Nuestra misión es acompañar al niño en su crecimiento
+                y a través del juego reforzar los valores que vienen de casa y son imprescindibles para la práctica
+                deportiva.
                 Enseñando de manera divertida aseguramos que el aprendizaje sea significativo l
                 ograremos formar mejores personas y futbolistas.</p>
             <p class="col-md">
-                    Nuestra Institución se encuentra a cargo de las instalaciones, el equipamiento y todo lo concerniente
-                     a la organización de las actividades, destacándose un equipo profesional 
-                    multidisciplinario que está a cargo de la planificación y desarrollo del Programa, 
-                    conducido por la Dirección de la Escuela.</p>
+                Nuestra Institución se encuentra a cargo de las instalaciones, el equipamiento y todo lo concerniente
+                a la organización de las actividades, destacándose un equipo profesional
+                multidisciplinario que está a cargo de la planificación y desarrollo del Programa,
+                conducido por la Dirección de la Escuela.</p>
         </section>
+
+        <section class="container">
+            <div class="counter-up">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <div class="counter">724</div>
+                        <div class="text">Alumnos</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-futbol"></i></div>
+                        <div class="counter">508</div>
+                        <div class="text">Partidos Jugados</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                        <div class="counter">39</div>
+                        <div class="text">Profesores a Cargo</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <div class="counter">12</div>
+                        <div class="text">Años de Experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <h2>Sumate a la Escuela Integral de Fútbol SportsToledo </h2>
         <p>Para edades de 2005 hastsa 2014</p>
         <!-- Aca comienza el contenido de la tabla -->
         <section class="container">
             <div class="table-responsive">
-                <table  class="table table-hover table-bordered">
+                <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
                             <th>Categoria</th>
@@ -146,7 +175,8 @@
                 </div>
                 <div class="row justify-content-md-center ">
                     <div class="col text-center font-weight-light">
-                        <a href="https://www.google.com.ar/maps" target="_blank" class="calle"><i class="fas fa-map-marker-alt"></i>RN A019, Cordoba, Argentina.</a><br>
+                        <a href="https://www.google.com.ar/maps" target="_blank" class="calle"><i
+                                class="fas fa-map-marker-alt"></i>RN A019, Cordoba, Argentina.</a><br>
                         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
                         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -163,6 +193,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <!--Script JS para el Funcionamiento del Contador -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+
 </body>
 
 </html>

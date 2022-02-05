@@ -60,13 +60,22 @@
   .banner__title.row {
     font-size: 1.7rem; } }
 
-@media (max-width: 800px) {
-  .column {
-    flex: 50%; } }
+@media screen and (max-width: 1036px) {
+  .counter-up {
+    padding: 50px 50px 0 50px; }
+  .counter-up .content .box {
+    width: calc(50% - 30px);
+    margin-bottom: 50px; } }
 
-@media (max-width: 600px) {
-  .column {
-    flex: 100%; } }
+@media screen and (max-width: 580px) {
+  .counter-up .content .box {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 20px; }
+  .counter-up {
+    padding: 30px 20px 0 20px; } }
 
 .SportsToledo__span {
   color: #52734D;
@@ -471,6 +480,51 @@ p.enfasis {
   font-size: 1.3rem;
   font-weight: 100;
   margin: 0; }
+
+.counter-up {
+  min-height: 40vh;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .counter-up .content {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .counter-up .content .box {
+      width: calc(25% - 30px);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 20px; }
+      .counter-up .content .box:hover {
+        border: 1px dashed #91C788; }
+      .counter-up .content .box .icon {
+        font-size: 50px;
+        color: #43995f; }
+        .counter-up .content .box .icon:hover {
+          transform: translateY(-5px) scale(1.3); }
+      .counter-up .content .box .counter {
+        font-size: 50px;
+        font-weight: 500;
+        color: #43995f;
+        font-family: sans-serif; }
+      .counter-up .content .box .text {
+        font-weight: 600;
+        color: #52734D; }
+  .counter-up::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
 
 .formContainer {
   background-color: #52734D;

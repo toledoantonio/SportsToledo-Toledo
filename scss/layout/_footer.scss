@@ -24,15 +24,18 @@ footer {
 }
 
 /*Links de Iconos*/
-.fa-map-marker-alt{ 
+.fa-map-marker-alt {
     @include iconos (2.1rem, 1.2rem)
 }
-.fa-facebook-square{
+
+.fa-facebook-square {
     @include iconos (2.4rem, 0.6rem)
 }
-.fa-instagram{
+
+.fa-instagram {
     @include iconos (2.4rem, 0.6rem)
 }
-.fa-youtube{
+
+.fa-youtube {
     @include iconos (2.4rem, 0.6rem)
 }

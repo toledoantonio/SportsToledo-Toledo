@@ -1,12 +1,12 @@
-$textoResaltado: (
-    SportsToledo__span: $color__oscuro--primario,
+$textoResaltado: (SportsToledo__span: $color__oscuro--primario,
     Futbol11__span: $color__oscuro--primario,
     Futbol7__span: $color__oscuro--primario,
     Futbol5__span: $color__oscuro--primario,
 );
 
-@each $palabras, $color in $textoResaltado {
-    .#{$palabras}{
+@each $palabras,
+$color in $textoResaltado {
+    .#{$palabras} {
         color: $color;
         font-weight: 600
     }

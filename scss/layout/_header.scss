@@ -1,6 +1,6 @@
 .header {
     background-color: $color__claro--secundario;
- 
+
     .navbar {
         font-family: $font-header;
         text-transform: uppercase;
@@ -9,7 +9,7 @@
         .navbar-nav {
             margin-left: 1rem;
 
-            .nav-link{
+            .nav-link {
                 color: $color__fondo--principal;
                 transition: all 0.3s ease;
             }
@@ -22,8 +22,8 @@
 
                 .nav-link {
                     position: relative;
-                    
-                    &::after{
+
+                    &::after {
                         content: "";
                         width: 0;
                         height: 4px;
@@ -35,7 +35,7 @@
                         will-change: width;
                     }
 
-                    &:hover::after{
+                    &:hover::after {
                         width: 100%;
                         right: 0;
                     }
