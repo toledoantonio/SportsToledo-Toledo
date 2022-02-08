@@ -12,13 +12,12 @@ main {
 
     table {
         border-collapse: collapse;
-        box-shadow: 0 5px 10px #b5b5b5;
-        background-color: white;
+        box-shadow: 0 5px 10px $sombra;
+        background-color: $blanco;
         text-align: left;
         overflow: hidden;
 
         thead {
-            box-shadow: 0 5px 10px #b5b5b5;
             background-color: $color__oscuro--primario;
 
             tr {
@@ -30,7 +29,7 @@ main {
                 }
 
                 &:nth-child(even) {
-                    background-color: #f5f4f4;
+                    background-color: $blanco;
                 }
             }
         }
@@ -46,8 +45,9 @@ main {
         .card {
             align-items: center;
             background-color: $color__claro--principal;
-            margin: auto;
+            margin: 2rem auto 2rem auto;
             transition: transform 0.5s;
+            box-shadow: 0 5px 10px $sombra;
 
             &:hover {
                 transform: translateY(-10px);

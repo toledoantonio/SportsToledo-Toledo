@@ -79,7 +79,7 @@
 
 //MIXIN PARA ICONOS
 
-@mixin iconos ($tamanio, $padding){
+@mixin iconos ($tamanio, $padding) {
     color: $color__fondo--principal;
     font-size: $tamanio;
     padding: $padding;
@@ -94,6 +94,7 @@
             @content;
         }
     }
+
     @if $breakpoint==md {
         @media only screen and (min-width:768px) {
             @content;
@@ -130,26 +131,17 @@
 @media screen and (max-width: 1036px) {
     .counter-up {
         padding: 50px 50px 0 50px;
-    }
 
-    .counter-up .content .box {
-        width: calc(50% - 30px);
-        margin-bottom: 50px;
+        .content .box {
+            width: calc(50% - 30px);
+            margin-bottom: 50px;
+        }
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
     .counter-up .content .box {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .wrapper {
-        padding: 20px;
-    }
-
-    .counter-up {
-        padding: 30px 20px 0 20px;
+        margin: 0 auto 1rem 6rem;
     }
 }

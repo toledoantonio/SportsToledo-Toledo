@@ -63,19 +63,14 @@
 @media screen and (max-width: 1036px) {
   .counter-up {
     padding: 50px 50px 0 50px; }
-  .counter-up .content .box {
-    width: calc(50% - 30px);
-    margin-bottom: 50px; } }
+    .counter-up .content .box {
+      width: calc(50% - 30px);
+      margin-bottom: 50px; } }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   .counter-up .content .box {
-    width: 100%; } }
-
-@media screen and (max-width: 500px) {
-  .wrapper {
-    padding: 20px; }
-  .counter-up {
-    padding: 30px 20px 0 20px; } }
+    width: 100%;
+    margin: 0 auto 1rem 6rem; } }
 
 .SportsToledo__span {
   color: #52734D;
@@ -398,11 +393,10 @@ main .h2__torneos {
 main table {
   border-collapse: collapse;
   box-shadow: 0 5px 10px #b5b5b5;
-  background-color: white;
+  background-color: #ffffff;
   text-align: left;
   overflow: hidden; }
   main table thead {
-    box-shadow: 0 5px 10px #b5b5b5;
     background-color: #52734D; }
     main table thead tr th {
       color: #FEFFDE;
@@ -410,7 +404,7 @@ main table {
       letter-spacing: 0.1rem;
       font-weight: 600; }
     main table thead tr:nth-child(even) {
-      background-color: #f5f4f4; }
+      background-color: #ffffff; }
 
 main .sectionCards {
   margin-bottom: 1.7rem; }
@@ -419,8 +413,9 @@ main .sectionCards {
   main .sectionCards .card {
     align-items: center;
     background-color: #DDFFBC;
-    margin: auto;
-    transition: transform 0.5s; }
+    margin: 2rem auto 2rem auto;
+    transition: transform 0.5s;
+    box-shadow: 0 5px 10px #b5b5b5; }
     main .sectionCards .card:hover {
       transform: translateY(-10px); }
     main .sectionCards .card .card-title {
